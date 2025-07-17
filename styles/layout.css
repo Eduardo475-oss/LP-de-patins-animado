@@ -1,0 +1,15 @@
+.container {
+    --max-width: 80rem;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+}
+
+
+@media (width <= 360px) {
+    .container {
+        --max-width: 360px;
+    }
+
+    & #hero {
+        flex-direction: column-reverse;
+    }
+}
