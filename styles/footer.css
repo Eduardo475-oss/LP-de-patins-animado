@@ -99,3 +99,18 @@ footer {
         }
     }
 }
+
+@media (max-width: 414px) {
+    footer {
+        display: grid;
+
+        & .logo {
+            margin-bottom: 3rem;
+        }
+
+        & nav {
+            display: grid;
+            margin-bottom: 3rem;
+        }
+    }
+}

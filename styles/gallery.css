@@ -113,3 +113,27 @@ section.gallery {
         transform: translateY(100%);
     }
 }
+
+@media (max-width: 414px) {
+    section.gallery {
+      padding: 2rem 1rem;
+  
+      & header span {
+        font-size: 1.4rem;
+      }
+  
+      & .content {
+        grid-template-areas:
+          "A"
+          "B"
+          "C"
+          "D"; 
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+  
+      & figure > img {
+        height: auto;
+      }
+    }
+  }

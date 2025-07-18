@@ -225,3 +225,66 @@
         transform: translateY(-15rem);
     }
 }
+
+@media (max-width: 414px) {
+    & #hero {
+        max-width: 80rem;
+        width: 100%;
+        padding: 8.9375rem 2rem;
+        margin-inline: auto;
+
+        flex-direction: column-reverse;
+
+        justify-content: center;
+
+        & > div:nth-child(2) {
+            display: block;
+            width: 100%;
+            max-width: 30.5rem;
+            height: 30.5rem;
+
+            & img[src*="Stars-1"] {
+                max-width: 3.5rem;
+                top: 15%;
+                z-index: 0;
+    
+                opacity: 0;
+                transform: translateX(400%);
+                animation: slidein 2s 800ms ease forwards, appear 100ms 800ms forwards;
+            }
+
+            & img[src*="Stars-2"] {
+                max-width: 1.56rem;
+                right: 0;
+                bottom: 60%;
+    
+                transform: translateX(400%);
+                animation: slidein 2.2s 800ms ease forwards;
+            }
+    }
+
+    & .buttons {
+        flex-direction: column-reverse;
+    }
+
+    & h1 {
+        max-width: 19.5rem;
+        font-size: 2rem;
+    }
+
+    & h1 div {
+        display: inline-block;
+        overflow: hidden;
+        height: 2.5rem;
+        width: min-content;
+        vertical-align: bottom;
+    }
+
+    
+    & h1 span {
+        display: block;
+
+        animation: slideup 5s 2s infinite ease;
+    }
+}
+}
